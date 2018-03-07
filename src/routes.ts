@@ -6,7 +6,7 @@ import {ChatroomComponent} from './app/chatroom/chatroom.component'
 
 export const appRoutes: Routes = [
     { path: 'login', component: LoginFormComponent },
-    { path: 'sign-up', component: SignupFormComponent },
+    { path: 'signup', component: SignupFormComponent },
     { path: 'chat', component: ChatroomComponent },
     { path: '', redirectTo: '/login', pathMatch: 'full' }
 ];
