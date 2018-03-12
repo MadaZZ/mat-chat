@@ -11,9 +11,12 @@ export class ChatFormComponent implements OnInit {
 
   ngOnInit() {
   }
+  
   send(){
     this.chat.sendMessage(this.message);
+    this.message='';
   }
+
   handleSubmit(){
     this.send();
   }

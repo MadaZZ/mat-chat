@@ -5,7 +5,7 @@ export const environment = {
     authDomain: 'mat-chat.firebaseapp.com',
     databaseURL: 'https://mat-chat.firebaseio.com',
     projectId: 'mat-chat',
-    storageBucket: '',
+    storageBucket: 'mat-chat.appspot.com',
     messagingSenderId: '161336983225'
   }
 };
