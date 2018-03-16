@@ -29,11 +29,11 @@ export class ChatService {
 
   //Function to send message
   sendMessage(msg:string){
+    //console.log("message sent");
     var timestamp= this.getTimeStamp();
     //var email= this.user.email;
     const email= 'test@asb.com';
     this.chatMessages=this.getMessages();
-    
     this.chatMessages.push({
       message: msg,
       timeSent: timestamp,
