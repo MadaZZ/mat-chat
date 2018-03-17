@@ -15,13 +15,13 @@ export class FeedComponent implements OnInit, OnChanges{
   constructor(private chatservice: ChatService) { }
 
   ngOnInit() {
-    console.log("feedinit")
-    this.feed= this.chatservice.getMessages;
+    //console.log("feedinit")
+    this.feed= this.chatservice.getMessages();
   }
 
   ngOnChanges() {
     //Called before any other lifecycle hook. Use it to inject dependencies, but avoid any serious work here.
     //Add '${implements OnChanges}' to the class.
-    this.feed= this.chatservice.getMessages;
+    this.feed= this.chatservice.getMessages();
   }
 }

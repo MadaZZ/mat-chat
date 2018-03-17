@@ -15,7 +15,7 @@ export class ChatService {
   user: any;
   chatMessages: any;
   //chatMessages: FirebaseListObservable<any>;
-  chatMessage: ChatMessage;
+  //chatMessage: ChatMessage;
   userName: Observable<string>;
   
   constructor( private db: AngularFireDatabase, private afAuth: AngularFireAuth){

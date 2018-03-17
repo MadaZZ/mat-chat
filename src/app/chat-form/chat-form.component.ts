@@ -12,12 +12,21 @@ export class ChatFormComponent implements OnInit {
   ngOnInit() {
   }
   
+  isDisabled = true;
+  
+  button(){
+    this.isDisabled = false;
+  }
+
   send(){
     this.chat.sendMessage(this.message);
     this.message='';
+    this.isDisabled = true;
   }
 
   handleSubmit(){
     this.send();
+    this.isDisabled = true;
   }
+
 }
