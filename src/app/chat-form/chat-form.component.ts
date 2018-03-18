@@ -12,7 +12,7 @@ export class ChatFormComponent implements OnInit {
   ngOnInit() {
   }
   
-  isDisabled = false;
+  isDisabled = true;
   
   button(){
     this.isDisabled = false;
